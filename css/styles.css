@@ -26,374 +26,59 @@
 /****************** Wireframing *****************/
 /************ ( Personal Wireframing ) **********/
 /* Personal Wreframing */
-/** { border: 1px dashed red; }               ***/
+/* { border: 1px dashed red; } */
+* { box-sizing: border-box; }             
 
 
 /***************** [ Positioning ] **************/
 body {
-  position: relative;           /* Own in A1#10 */
+  background-color: #34595e;            /*A1#11 */
 }
 
 /****************** [ Box-model ] ***************/
-.anchor {
-  padding-top: 50px;            /* Own in A1#10 */
-}
 
-.container-fluid {
-  padding-left: 0;                      /* A1#8 */
-  padding-right: 0;                     /* A1#8 */ 
- }
+.calculator-body {
+  position: relative;                  /* A1#11 */
+  top: 20px;                           /* A1#11 */
+  max-width: 320px;                    /* A1#11 */
+  /*height: 350px;                       /* A1#11 */
+  padding: 3px;                        /* A1#11 */
+  margin: 0 auto;                      /* A1#11 */
 
-.jumbotron {
-  /* Box-model */
-  margin-left: .5em;                   /* A1#10 */
-  margin-right: .5em;                  /* A1#10 */
   /* Visual */
-  background-size: cover;         /* Own inA1#9 */  
-}
-
-/***************** [ Typography ] ****************/
-h1 { 
-  font-size: 4em;                 /* Own in A1#9 */
-  font-family: 'Bangers', cursive;/* Own in A1#5 */
-  }
-
-h2 { 
-  font-family: 'Indie Flower', cursive; /* A1#10 */
-  font-size: 3em;                 /* Own in A1#9 */         
-  text-transform: uppercase;            /* A1#10 */
-  text-align: center;                   /* A1#10 */
-}
-
-h3 { font-size: 2em; }            /* Own in A1#9 */
-
-p { 
-  font-size: 1em;                 /* Own in A1#9 */
-  font-family: Futura, Helvetica, Arial, sans-serif; /* A1#5 */
-  text-align: justify;            /* Own in A1#9 */
-  -webkit-margin-before: 0em;            /* A1#5 */
-}
-
-/************ [ Background and Colours] **********/
-body {
-  background-color: rgba(186, 173, 11, 1);/*A1#5 */
-  color: #34595e;                        /* A1#5 */
-}
-
-h2 { color: #696200; }                  /* A1#10 */
-
-/************** BOOTSTRAP SECTIONS ***************/
-/*********** Styling: Navigation Bar *************/ 
-nav {
-  /* Positioning */
-  /* Box-model */
-  /* Visual */
-  background-color: #3E3A00; /* A1#6 Changed  from black to own */
-  opacity: 0.7;
-  filter: alpha(opacity=70); /* For IE8 and earlier */
-  box-shadow: 0 1px 2px #ffb380, inset 0 1px 0 #fff; /*Own A1L6 */
-}
-
-.nav>li { padding: 0 10px 0 0; }        /* A1#10*/
-
-.nav>li>#navalink {
-  /* Positioning */
-  /* Box-model */
-  /* Typography */
-  text-transform: uppercase;            /* A1#6 */
-  letter-spacing: 0.05em;               /* A1#6 */
-  /* Visual */
-  color: #ffb380;                       /* A1#6 */
-  /*border: 1px double #3E3A00;    /* Own in A1#7 */
-  /*border-style: double none;     /* Own in A1#7 */ 
-  /* Misc */
-  transition: color 600ms;              /* A1#6 */
-  -webkit-transition: color 600ms;      /* A1#6 */
-}
-
-.nav>li>#navalink:hover {
-  color: black;                        /* A1#10 */
-  background-color: #ffb380;           /* A1#10 */
-  border-radius: 3px;                  /* A1#10 */  
-}
-
-.projectName a {
-  /* Box-model */
-  padding: 0 10px;                      /* A1#10*/
-  /* Typography */
-  text-transform: uppercase;           /* A1#10 */
-  font-weight: bold;                   /* A1#10 */
-  /* Visual */
-  color: #ffb380;                      /* A1#10 */
-}
-
-#brand-image {
-  padding: 5px 20px;                   /* A1#10 */
-}
-
-.img-responsive {
-  border-radius: 3px;                  /* A1#10 */
-}
-
-/*********** Styling: Carousel ******************/ 
-.carousel-caption h1 {
-  /* Box-model */
-  /* Typography */               
-  text-align: center;            /* Own in A1#9 */
-  /* Visual */
-  color: #696200;                /* Own in A1#8 */  
-}
-
-.carousel-caption p {
-  /* Box-model */
-  margin: .5em 0;                /* Own in A1#8 */
-  padding: .5em 0 7em 0;         /* Own in A1#8 */
-  /* Typography */
-  text-align: center;            /* Own in A1#9 */           
-  /*font-size: 2em;     /*DELETED/* Own in A1#8 */
-  /* Visual */
-  color: #696200;                /* Own in A1#8 */
-}
-
-@media (max-width: 480px) {
-  .carousel-caption h1 {
-    /* Box-model */
-    /* Typography */               
-    font-size: 2em;              /* Own in A1#9 */
-    /* Visual */
-  }
-
-  .carousel-caption p {
-    /* Box-model */
-    padding: .5em 0 .5em 0;      /* Own in A1#8 */
-    /* Typography */               
-    font-size: 1em;              /* Own in A1#9 */
-    /* Visual */
-  }
-}
-
-/*********** Styling: Common Jumbotrons *********/ 
-.jumbotron h1,
-#contact>h1 {
-  color: #ffb380;                       /* A1#5 */
-  text-shadow: -1px 0 #696200, 0 1px #696200, 1px 0 #696200, 0 -1px #696200; /* Own A1#8 */  
-}
-
-.jumbotron p,
-#contact>p {
-  font-family: 'Indie Flower', cursive; /* Own in A1#8 */
-  color: #ffb380;                       /* A1#5 */
-  text-shadow: -1px 0 #696200, 0 1px #696200, 1px 0 #696200, 0 -1px #696200; /* Own A1#8 */
- }
-
-/*********** Styling: Accordion *****************/
-
-#headingpanel {
-  background-color: #3E3A00;     /* Own in A1#7 */
-}
-
-.panel-title {
-  font-family: 'Bangers', cursive;/* Own in A1#7 */
-  color: white;                  /* Own in A1#7 */
-}
-
-.panel-body {
-  font-family: 'Indie Flower', cursive; /* Own in A1#7 */
-}
-
-.panel-title span {
-  padding-right: 10px;            /* Own in A1#7 */
-}
-
-/******** Styling: Contact Page Background ******/
-/************ ( Parallax ) **********************/
-
-#contact {
-  /* Background picture                         */
-  background-image: url("../img/webpiccontactheader1.jpg"); /* A1L10 */
-  /* Fixed position while page scrolls onwards. */
-  background-attachment: fixed;        /* A1L10 */
-  /* Have the img cover the whole page.         */
-  background-size: cover;              /* A1L10 */
-  /* Change text color for readability.         */
-  /*color: white;                      /* A1L10 */ 
-  /*(Commented out as it is messing up my contact container text.) */
-  padding: 100px;                      /* A1L10 */
-  padding-top: 50px;                   /* A1L10 */
-  height: 400px;                       /* A1L10 */
-}
-
-/**************** CUSTOM SECTIONS ***************/
-/*********** Styling: PageSection ***************/ 
-.pagesection {                  /* Own in A1#10 */
-  /* Box-model */
-  padding: .5em;                /* Own in A1#10 */
-  margin: .5em;                 /* Own in A1#10 */
+  background-color: #fff;    /* Own in A1#10 */
   
-  /* Visual */
-  background-color: #f5f5f5;    /* Own in A1#10 */
-  border: 3px solid #696200;    /* Own in A1#10 */
   border-radius: 6px;           /* Own in A1#10 */
 }
 
-/***** Styling: Individual Concept Items  *******/
-.indvconcept {}                  /* Own in A1#9 */        
-
-/*********** Styling: Individual Projects  ******/ 
-.indvproject {                   /* Own in A1#9 */
-  /* Positioning */
-  /* Box-model */
-  padding: .5em;                 /* Own in A1#9 */
-  margin: .5em;                  /* Own in A1#9 */
-  
-  /* Typography */
-  text-align: center;            /* Own in A1#9 */
+.calculator-screen {
+  height: 35px;                        /* A1#11 */
+  margin-bottom: 2px;                  /* A1#11 */
+  padding: 1px;                        /* A1#11 */
 
   /* Visual */
-  background-color: #f5f5f5;     /* Own in A1#9 */
-  border: 1px solid #696200;     /* Own in A1#9 */
-  border-radius: 4px;            /* Own in A1#9 */
-  /* Misc */
+  background-color: #f5f5f5;    /* Own in A1#10 */
+  border: 1px solid #696200;    /* Own in A1#10 */
+  border-radius: 6px;           /* Own in A1#10 */
 }
 
-.undercontruction {
-  /* Positioning */
-  /* Box-model */
-  /* Visual */
-  opacity: 0.7;                        /* A1#10 */
-  filter: alpha(opacity=70); /* For IE8 and earlier */  
-}
 
-/***** Styling: Individual About Items  *********/
-.indvabout1 {}                   /* Own in A1#9 */
-.indvabout2 {}                   /* Own in A1#9 */ 
-
-/***** Styling: Individual Work Items   *********/
-.indvwork1 {}                          /* A1#10 */ 
-.indvwork2 {}                          /* A1#10 */ 
-
-/***** Styling: Individual Contacts Items  ******/ 
-.indcontact {}                         /* A1#10 */ 
-
-/**************** UNIQUE SECTIONS ***************/
-/********** Styling: pagejumbos *****************/
-#aboutpagejumbo { background: url("../img/webpicaboutheader1.jpg") no-repeat center top; } /* A1#9 */   
-#workpagejumbo { background: url("../img/webpicworkheader1.jpg") no-repeat center top; } /* A1#10 */
-#faqpagejumbo { background: url("../img/webpicfaqheader1.jpg") no-repeat center top; }/* A1#8 */
-
-
-/*********** Styling: Glyphicon Tags ************/ 
-.col-md-4 span {
-  /* Positioning */
-  /* Box-model */
-  margin: 2px 5px;               /* Own in A1#7 */
-  padding: 5px;                  /* Own in A1#7 */
-  /* Typography */               /* Own in A1#7 */
-  font-size: 30px;
-  /* Visual */
-  background-color: #f5f5f5;     /* Own in A1#7 */
-  border: 5px solid #f5f5f5;     /* Own in A1#7 */
-  border-radius: 5px;            /* Own in A1#7 */
-  /* Misc */
-  transition: color 600ms;       /* Own in A1#7 */
-  -webkit-transition: color 600ms;/* Own in A1#7 */
-}
-
-.col-md-4 span:hover {
-  /* Positioning */
-  /* Box-model */
-  /* Typography */
-  /* Visual */
-  color: #ffb380;                /* Own in A1#7 */
-  border: 5px solid #696200;     /* Own in A1#7 */
-  /*border-radius: 5px;          /* Own in A1#7 */
-  background-color: #696200;     /* Own in A1#7 */
-  opacity: 0.7;                  /* Own in A1#7 */
-  filter: alpha(opacity=70); /* For IE8 and earlier */
-  /* Misc */   
-}
-
-/*********** Styling: Container *****************/
-
-#conceptpagesection {}           /* Own in A1#9 */
-#workpagesection {}              /* Own in A1#9 */
-#aboutpagesection {}             /* Own in A1#9 */
-#work1pagesection {}             /* Own in A1#9 */
-#work2pagesection {}             /* Own in A1#9 */
-#contactpagesction {}            /* Own in A1#9 */
-#faqpagesection {}               /* Own in A1#9 */
- 
-
-/* ============================================ */
-/* ============================================ */
-/*               NOT USED                       */
-/* ============================================ */
-
-/* ============================================ */
-/* ============================================ */
-/* Good CSS Guide */
-/**** (CSS not used. Kept for reference. ) ******/
-/* ============================================ */
-.selector,
-.selector-secondary,
-.selector[type="text"] {
-  padding: 15px;
-  margin-bottom: 15px;
-  background-color: rgba(0,0,0,.5);
-  box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
-}
-
-/* STYLE GUIDE AND ORDER */
-.declaration-order {
-  /* Positioning */
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-
-  /* Box-model */
-  display: block;
-  float: right;
-  width: 100px;
-  height: 100px;
-
-  /* Typography */
-  font: normal 13px "Helvetica Neue", sans-serif;
-  line-height: 1.5;
-  color: #333;
-  text-align: center;
+.calculator-button {
+  display: inline-block;
+  width: 71px;                          /* A1#11 */
+  height: 71px;                         /* A1#11 */
+  margin: 3px 2px;                          /* A1#11 */
+  text-align: center;                  /* A1#11 */
+  vertical-align: middle;               /* A1#11 */
+  /*padding: 10px;                        /* A1#11 */
 
   /* Visual */
-  background-color: #f5f5f5;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
-
-  /* Misc */
-  opacity: 1;
+  background-color: #ffb380;    /* Own in A1#10 */
+  border: 1px solid #ffb380;    /* Own in A1#10 */
+  border-radius: 6px;           /* Own in A1#10 */
 }
 
-
-/* ============================================ */
-/* ============================================ */
-/*               COLOUR ASSIGMENTS              */
-/* ============================================ */
-/****How i want to use colour assigments****/
-@brand-primary: darken(#428bca, 6.5%); // #337ab7
-@brand-success: #5cb85c;
-@brand-info:    #5bc0de;
-@brand-warning: #f0ad4e;
-@brand-danger:  #d9534f;
-/*Use any of these color variables as they are or reassign them to more meaningful variables for your project.*/
-
-/*Use as-is*/
-.masthead {
-  background-color: @brand-primary;
+.calculator-button p {  
+  line-height: 36px;      
 }
 
-/*/ Reassigned variables in Less*/
-@alert-message-background: @brand-info;
-.alert {
-  background-color: @alert-message-background;
-}
