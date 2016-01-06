@@ -28,30 +28,40 @@
     <!-- ======================================================================================= -->
     <!-- CALCULATOR BODY                                                                         -->
     <!-- ======================================================================================= -->
-    <div class="calculator-body">
+    
+    <div class="calc-body">
 
-      <div class="calculator-screen"> <p></p>      </div>
+      <div class="calc-screen"></div>
 
-      <div class="calculator-buttons">
-        <div class="calculator-button"> <p>7</p>      </div>
-        <div class="calculator-button"> <p>8</p>      </div>
-        <div class="calculator-button"> <p>9</p>     </div>
-        <div class="calculator-button"> <p>/</p>     </div>
-        <div class="calculator-button"> <p>4</p>     </div>
-        <div class="calculator-button"> <p>5</p>     </div>
-        <div class="calculator-button"> <p>6</p>     </div>
-        <div class="calculator-button"> <p>*</p>     </div>
-        <div class="calculator-button"> <p>1</p>     </div>
-        <div class="calculator-button"> <p>2</p>     </div>
-        <div class="calculator-button"> <p>3</p>     </div>
-        <div class="calculator-button"> <p>-</p>     </div>
-        <div class="calculator-button"> <p>0</p>     </div>
-        <div class="calculator-button"> <p>.</p>     </div>
-        <div class="calculator-button"> <p>=</p>     </div>
-        <div class="calculator-button"> <p>+</p>     </div>
+      <div class="calc-buttons">
+        <button class="calc-button" value="(">(</button>
+        <button class="calc-button" value=")">)</button>
+        <button class="calc-button" value="CE">CE</button>
+        <button class="calc-button" value="/">/</button>
+        <button class="calc-button" value="7">7</button>
+        <button class="calc-button" value="8">8</button>
+        <button class="calc-button" value="9">9</button>
+        <button class="calc-button" value="*">*</button>
+        <button class="calc-button" value="4">4</button>
+        <button class="calc-button" value="5">5</button>
+        <button class="calc-button" value="6">6</button>
+        <button class="calc-button" value="-">-</button>
+        <button class="calc-button" value="1">1</button>
+        <button class="calc-button" value="2">2</button>
+        <button class="calc-button" value="3">3</button>
+        <button class="calc-button" value="+">+</button>
+        <button class="calc-button" value="0">0</button>
+        <button class="calc-button" value=".">.</button>
+        <button class="calc-button" value="%">%</button>
+        <button class="calc-button" value="=">=</button>
+        
       </div> <!-- /calculator-buttons-->
 
     </div> <!-- /calculator-body-->
+
+    <!-- ScratchPad-->
+
+    <div class="calc-memory"></div>
 
     
 
@@ -59,14 +69,11 @@
     <!-- All your JavaScript comes now                                                           -->
     <!-- ======================================================================================= -->
 
+    <!-- Enable jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     
-    <!-- Bootstrap core JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
     <!-- Can place script tags with JavaScript files here -->
-    <script src="js/scripts.js"></script>
-    
+    <script src="js/scripts.js"></script>    
 
   </body>
 </html>
