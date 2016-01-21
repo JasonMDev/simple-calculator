@@ -8,23 +8,22 @@ $(document).ready(function() {
 		var valBtn = $(this).val();
 		var evalScreen = "";
 
-		//What is teh bvalue of click.
-		console.log(valBtn);
+		
 		
 		//Flow control.
 		switch(valBtn) {
 			//When "=" is pressed
 			case "=":
-			  //console.log("Pressed =.");
+			  
 			  evalScreen = eval($(".calc-memory").html());
-			  console.log(evalScreen);
+			 
 			  $(".calc-screen").html(evalScreen);
 			  $(".calc-memory").html("");
 			  break;
     	
     	//When "%" is pressed
     	case "%":
-        console.log("Pressed %.");
+        
         
         if ($(".calc-screen").html() === "") {
         	//true
@@ -44,7 +43,7 @@ $(document).ready(function() {
 
     	//When "CE" is pressed
     	case "CE":
-        console.log("Pressed CE.");
+       
         $(".calc-screen").html("");
         break;
 
